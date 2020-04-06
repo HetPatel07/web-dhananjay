@@ -1,0 +1,132 @@
+@font-face {
+    font-family: csfont;
+    src: url(../font/NexaRustHandmade-Extended.otf);
+}
+
+@font-face {
+    font-family: qtfont;
+    src: url(../font/Montserrat-SemiBold.ttf);
+}
+
+.home {
+    /* background: #333; */
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.commingSoon {
+    font-size: 30px;
+    color: #fff;
+    font-family: csfont;
+}
+
+.span {
+    border: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    display: inline-block;
+    margin: 6px;
+    color: #fff;
+    animation-name: animate;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    transform: scale(1);
+    transition: .3s all;
+}
+
+.span:nth-of-type(1) {
+    animation-delay: .4s;
+}
+
+.span:nth-of-type(2) {
+    animation-delay: .8s;
+}
+
+.span:nth-of-type(3) {
+    animation-delay: 1.2s;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+        transition: .3s all;
+    }
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {}
+
+
+/* Smartphones (landscape) ----------- */
+
+@media only screen and (min-width: 321px) {
+    /* Styles */
+}
+
+
+/* Smartphones (portrait) ----------- */
+
+@media only screen and (max-width: 320px) {
+    /* Styles */
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {}
+
+
+/* iPads (landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    /* Styles */
+}
+
+
+/* iPads (portrait) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    /* Styles */
+}
+
+
+/* Desktops and laptops ----------- */
+
+@media only screen and (min-width: 1224px) {
+    /* Styles */
+}
+
+
+/* Large screens ----------- */
+
+@media only screen and (min-width: 1824px) {
+    /* Styles */
+}
+
+
+/* iPhone 4 ----------- */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+    /* Styles */
+}
